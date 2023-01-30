@@ -1,0 +1,56 @@
+/* banner */
+.banner {
+    background-image: url("./images/banner.png");
+    padding: 104px 239px;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 8px;
+}
+
+.banner::before {
+    background: linear-gradient(180deg, #111111 0%, rgba(17, 17, 17, 0) 100%);
+    border-radius: 8px;
+}
+
+/* what our client say carousel */
+
+.carousel-item,
+.carousel-item img {
+    height: 500px;
+}
+
+.carousel-item::before {
+    content: " ";
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: rgba(17, 17, 17, 0.8);
+    opacity: 0.7;
+}
+
+.carousel-caption {
+    bottom: 7rem;
+}
+
+.carousel-caption img {
+    height: 70px;
+
+}
+
+/* responsive for small devices */
+
+@media screen and (max-width:576px) {
+    .banner {
+        padding: 20px;
+    }
+
+    .carousel-caption {
+        bottom: 2rem;
+    }
+
+}
